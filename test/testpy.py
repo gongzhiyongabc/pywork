@@ -27,5 +27,46 @@
 #     print(n)
 
 
-from collections import Iterator
-print(isinstance(iter('abc'), Iterator))
+# from collections import Iterator
+# print(isinstance(iter('abc'), Iterator))
+
+# def count():
+#     def f(j):
+#         def g():
+#             return j*j
+#         return g
+#     fs = []
+#     for i in range(1, 4):
+#         fs.append(f(i)) # f(i)立刻被执行，因此i的当前值被传入f()
+#     return fs
+#
+# f1, f2, f3 = count()
+#
+# print(f1())
+# class Student(object):
+#
+#     def __init__(self, name, score):
+#         self.name = name
+#         self.score = score
+#
+#     def print_score(self):
+#         print('%s: %s'%(self.name, self.score))
+#
+#     def get_grade(self):
+#         if self.score >= 90:
+#             return 'A'
+#         elif self.score >= 60:
+#             return 'B'
+#         else:
+#             return 'C'
+#
+# bart = Student('Bart Simpson', 59)
+# print(bart.get_grade())
+
+
+from enum import Enum
+
+Month = Enum("Month",('Jan','Feb','Mar'))
+
+
+
